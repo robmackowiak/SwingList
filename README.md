@@ -1,5 +1,6 @@
 # Golf Hit List Generator
 
+~~ Function still in-development but useful as a start ~~
 This script generates a hit list for golfers that specifies the clubs and number of hits for each club during a practice session. The hit list is generated randomly based on the user inputs of number of balls to hit and variability level (Low, Medium, High).
 
 A lower variability is representative of less variable practice in the driving range session, and a higher variability increased the level of variable practice. 
