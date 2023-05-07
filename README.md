@@ -1,5 +1,7 @@
 # Golf Hit List Generator
 
+[@RobMackowiak](https://twitter.com/RobMackowiak) - May 2023
+
 ~~ Function still in-development but useful as a start ~~
 
 This script generates a hit list for golfers that specifies the clubs and number of hits for each club during a practice session. The hit list is generated randomly based on the user inputs of number of balls to hit and variability level (Low, Medium, High).
