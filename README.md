@@ -2,7 +2,7 @@
 
 [@RobMackowiak](https://twitter.com/RobMackowiak) - May 2023
 
-~~ Function still in-development, more motor learning integration coming, but useful as a start ~~
+~~ Still in-development, more motor learning integration coming, but useful as a start ~~
 
 This basic script generates a driving range practice session for golfers that specifies the clubs and number of hits for each club. The goal of the Hit List is to follow motor learning principles to produce a more useful practice session than constant practice. The schedule is created based on the user inputs of number of balls to hit and variability level (Low, Medium, High). Clubs can be altered within the script.
 
