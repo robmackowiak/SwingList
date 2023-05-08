@@ -8,7 +8,7 @@ num_balls = int(input("Enter the number of balls: "))
 variability = input("Enter the variability of random (Low/Medium/High): ")
 clubs = ['SW','GW','PW','9-Iron','8-Iron','7-Iron','6-Iron','5-Iron','Hybrid','Driver']
 
-def get_hitList(num_balls,variability,clubs):
+def get_SwingList(num_balls,variability,clubs):
     random.shuffle(clubs)
 
     if variability == "Low":
@@ -70,14 +70,14 @@ def get_hitList(num_balls,variability,clubs):
     
     # generate the current date and time as a string
     now = datetime.datetime.now().date().strftime('%Y-%m-%d')
-    filename = f'HitList_{now}.xlsx'
+    filename = f'SwingList_{now}.xlsx'
     writer = pd.ExcelWriter(filename, engine='xlsxwriter')
     df.to_excel(writer, index=False)
     writer.save()
-    print("...HitList Created..")
-    print("...HitList Saved to Working Directory..")
+    print("...SwingList Created..")
+    print("...SwingList Saved to Working Directory..")
 
     return
 
 warnings.filterwarnings("ignore")
-get_hitList(num_balls,variability,clubs)
+get_SwingList(num_balls,variability,clubs)
