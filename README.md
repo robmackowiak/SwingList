@@ -4,9 +4,9 @@
 
 ~~ Still in-development, more motor learning integration coming, but useful as a start ~~
 
-This basic script generates a driving range practice session for golfers that specifies the clubs and number of hits for each club. The goal of the Hit List is to follow motor learning principles to produce a more useful practice session than constant practice. The schedule is created based on the user inputs of number of balls to hit and variability level (Low, Medium, High). Clubs can be altered within the script.
+This basic script generates a driving range practice session for golfers that specifies the clubs and number of hits for each club. The goal of the Hit List is to follow motor learning principles to produce a more useful practice session than constant, blocked practice. The schedule is created based on the user inputs of number of balls to hit and variability level (Low, Medium, High). Clubs can be altered within the script.
 
-A higher variability is representative of more variable practice in the Hit List, more pronounced switching between clubs, with fewer hits at each club. 
+A higher variability is representative of less blocked practice in the Hit List, more pronounced switching between clubs, with fewer hits at each club. 
 
 ## Prerequisites
 This script requires the following Python packages to be installed:
