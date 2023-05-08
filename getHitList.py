@@ -21,11 +21,11 @@ def get_hitList(num_balls,variability,clubs):
             if sum(values) + value <= num_balls:
                 items.append(club)
                 values.append(value)
+            if sum(values) == num_balls:
+                break
             if sum(values) + value > num_balls:
                 items.append(club)
                 values.append(num_balls-sum(values))
-            if sum(values) == num_balls:
-                break
     elif variability == "Medium":
         items = []
         values = []
@@ -38,11 +38,11 @@ def get_hitList(num_balls,variability,clubs):
             if sum(values) + value <= num_balls:
                 items.append(club)
                 values.append(value)
+            if sum(values) == num_balls:
+                break
             if sum(values) + value > num_balls:
                 items.append(club)
                 values.append(num_balls-sum(values))
-            if sum(values) == num_balls:
-                break
     elif variability == "High":
         items = []
         values = []
