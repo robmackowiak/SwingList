@@ -1,4 +1,4 @@
-# Golf Hit List Generator
+# Hit List: A Golf Driving Range Practice Tool
 
 [@RobMackowiak](https://twitter.com/RobMackowiak) - May 2023
 
