@@ -1,6 +1,8 @@
 import pandas as pd
 import random
 import datetime
+import warnings
+
 
 num_balls = int(input("Enter the number of balls: "))
 variability = input("Enter the variability of random (Low/Medium/High): ")
@@ -17,7 +19,7 @@ def get_hitList(num_balls,variability,clubs):
                 club = random.choice(clubs)
             else:
                 club = random.choice([c for c in clubs if c != items[-1]])
-            value = random.randint(4, 5)
+            value = random.randint(5, 6)
             if sum(values) + value <= num_balls:
                 items.append(club)
                 values.append(value)
@@ -34,7 +36,7 @@ def get_hitList(num_balls,variability,clubs):
                 club = random.choice(clubs)
             else:
                 club = random.choice([c for c in clubs if c != items[-1]])
-            value = random.randint(2, 3)
+            value = random.randint(3, 4)
             if sum(values) + value <= num_balls:
                 items.append(club)
                 values.append(value)
@@ -51,7 +53,7 @@ def get_hitList(num_balls,variability,clubs):
                 club = random.choice(clubs)
             else:
                 club = random.choice([c for c in clubs if c != items[-1]])
-            value = random.randint(1, 2)
+            value = random.randint(1, 3)
             if sum(values) + value <= num_balls:
                 items.append(club)
                 values.append(value)
@@ -72,7 +74,10 @@ def get_hitList(num_balls,variability,clubs):
     writer = pd.ExcelWriter(filename, engine='xlsxwriter')
     df.to_excel(writer, index=False)
     writer.save()
+    print("...HitList Created..")
+    print("...HitList Saved to Working Directory..")
 
     return
 
+warnings.filterwarnings("ignore")
 get_hitList(num_balls,variability,clubs)
