@@ -22,7 +22,7 @@ This script requires the following Python packages to be installed:
 5. The Excel file will be saved in the same directory as the script.
 
 ## Function
-The `get_SwingList()` function takes three arguments: `num_balls`, `variability`, and `clubs`. 
+The `export_swinglist()` function takes three arguments: `num_balls`, `variability`, and `clubs`. 
 - `num_balls`: an integer representing the number of balls to hit during the practice session.
 - `variability`: a string representing the variability level of the hit list. Valid options are "Low", "Medium", and "High".
 - `clubs`: a list of strings representing the clubs to use during the practice session.
