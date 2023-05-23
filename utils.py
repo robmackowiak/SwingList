@@ -30,16 +30,16 @@ def create_golf_df(num_balls,variability,swing_speed_included,clubs,swing_speed)
             break
         cum_reps = np.sum(reps)
     
+    df = pd.DataFrame({"Club": club_list, "Hits": reps})
     if swing_speed_included == "Y":
         swing_speed_list = []
         for i in range(len(club_list)):
             swing_speed_list.append(random.choice(swing_speed))
         # Create the pandas dataframe
-        df = pd.DataFrame({"Club": club_list, "Hits": reps,"Swing Speeds": swing_speed_list})
-        return df
-    else:
-        df = pd.DataFrame({"Club": club_list, "Hits": reps})
-        return df
+        swing_speed_df = pd.DataFrame({"Swing Speeds": swing_speed_list})
+        df = pd.concat(df,swing_speed_df)
+    
+    return df
 
 def save_file(df):
     # generate the current date and time as a string
