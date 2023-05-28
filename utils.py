@@ -8,7 +8,7 @@ def create_golf_df(num_balls,variability,swing_speed_included,clubs,shot_type_in
     '''Save excel file for driving range schedule'''
     swing_speed = ['100%','100%','100%','100%','100%','100%','80%','60%','40%']
     shot_type = ['Hook','Pull','Fade','Straight','Straight','Straight','Straight','Straight','Straight','Draw','Push','Slice']
-    dl_type = ['Normal','Normal','Normal','Normal','Normal','Normal','Normal','One Arm','One Eye Closed','Staggered Stance','Upright','Bent Over','Bent Knees','Stiff Wrists']
+    dl_type = ['Normal','Normal','Normal','Normal','Normal','Normal','Normal','One Eye Closed','Left Foot Forward','Right Foot Forward','Ball More Forward in Stance','Ball More Backward in Stance','Ball Further Away','Ball Closer']
     club_list= []
     reps = []
     shot_type_list = []
