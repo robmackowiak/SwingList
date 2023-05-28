@@ -21,7 +21,8 @@ with col1:
 with col2:
     st.subheader('Optional Settings')
     speed_bool = st.checkbox("Include variable clubspeeds?")
-    shot_type_bool = st.checkbox("Include shot types?")
+    shot_type_bool = st.checkbox("Include variable shot types?")
+    dl_bool = st.checkbox("Include differential learning? (ADVANCED)")
 
 col1,col2,col3 = st.columns(3)
 with col2:
@@ -31,5 +32,5 @@ with col2:
 col1 = st.columns(1)
 
 if produce_df == True:
-    clubs_df = utils.create_golf_df(number,variability,speed_bool,clubs,shot_type_bool)
+    clubs_df = utils.create_golf_df(number,variability,speed_bool,clubs,shot_type_bool,dl_bool)
     st.dataframe(clubs_df,use_container_width=True)
