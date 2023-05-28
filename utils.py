@@ -35,6 +35,7 @@ def create_golf_df(num_balls,variability,swing_speed_included,clubs,shot_type_in
 
     swing_speed_list = pd.DataFrame({"Swing Speeds":swing_speed_list})
     shot_type_list = pd.DataFrame({"Shot Types":shot_type_list})
+    dl_list = pd.DataFrame({"Differential Learning Options":dl_list})
     df = pd.DataFrame({"Club": club_list, "Hits": reps})
     
     if swing_speed_included == True:
