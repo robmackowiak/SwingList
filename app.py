@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import utils
 
-st.title('⛳ Driving Range Practice Scheduler')
+st.title('⛳ SwingList: A Driving Range Practice Scheduler')
 
 clubs = st.multiselect(
     'Select clubs:',
